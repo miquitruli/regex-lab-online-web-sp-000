@@ -1,5 +1,4 @@
 def starts_with_a_vowel?(word)
-word = avion
   if word.(/^\w[aeiou]/)
     return true
   end
