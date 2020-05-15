@@ -1,7 +1,7 @@
 def starts_with_a_vowel?(word)
   if word.scan(/\w+^[aeiou]/)
     return true
-  else
+  elsif word.scam(/\w+^[[bcdfghjklmnpqrstvwxyz]/)
     return false
   end
 
