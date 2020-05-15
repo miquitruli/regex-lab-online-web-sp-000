@@ -24,9 +24,3 @@ end
 def valid_phone_number?(phone)
 
 end
-
-word = "The rain in Spain lies mainly in the plain."
-word.scan(/\w+ain/)
-
-elsif word.scan(/\w+^[^aeiou])
-  return false
