@@ -1,5 +1,5 @@
 def starts_with_a_vowel?(word)
-  if /\b[aeiou][a-z]*\b/.scan(word)
+  if word.scan(/\w+^[aeiou])
     return true
   elsif /\b[^AEIOUaeiou ][^ ]*\b/.scan(word)
     return false
@@ -21,3 +21,6 @@ end
 def valid_phone_number?(phone)
 
 end
+
+word = "The rain in Spain lies mainly in the plain."
+word.scan(/\w+ain/)
