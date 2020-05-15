@@ -1,9 +1,10 @@
 def starts_with_a_vowel?(word)
-  if word.scan(/\w+^[aeiou])
+  if word.scan?(/\w+^[aeiou])
     return true
-  elsif word.scan(/\w+^[^aeiou])
+  else
     return false
   end
+
 end
 
 word=alive
@@ -26,3 +27,6 @@ end
 
 word = "The rain in Spain lies mainly in the plain."
 word.scan(/\w+ain/)
+
+elsif word.scan(/\w+^[^aeiou])
+  return false
